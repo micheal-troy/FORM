@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-1 {
+    background-color: #790f0f;
+    padding: 4em 2em 2em 2em;
+}
+
+.container-1 h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.container-1 p {
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1.6;
+    margin: 2em 0;
+}
+
+.container-1 p span {
+    color: orange;
+}
+
+.container-2 {
+    padding: 2em 2em 0;
+}
+
+.button a button {
+    background-color: whitesmoke;
+    border-radius: 45px;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.button {
+    display: flex;
+    justify-content: right;
+    padding: right;
+}
+
+.heading {
+    line-height: 1.6;
+    margin: 1em 0;
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+}
+
+.input-control p {
+    font-size: small;
+    padding-bottom: 0.5em;
+}
+
+.input-control input {
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px blue;
+    padding: 1em;
+}
+
+.input-control input::placeholder {
+    font-weight: 600;
+}
+
+.input-control input:focus {
+    border: 5px solid;
+}
+
+.form-container .input-control {
+    margin-top: 1em;
+    width: 50%;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.phone img {
+    width: 20px;
+}
+
+.signup-button {
+    margin-top: 3em;
+}
+
+.signup-button a button {
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    font-size: small;
+    background-color: orangered;
+    border: 0;
+    padding: 1em 0;
+    border-radius: 5px;
+}
+
+.signup-text p {
+    font-size: small;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.signup-text p span {
+    color: orangered;
+}
+
+@media only screen and (max-width:768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-1 {
+        padding: 2em 2em 0;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .container-1 {
+        padding: 2em 2em 0;
+    }
+
+    .container-1 {
+        display: none;
+    }
+}
